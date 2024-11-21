@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 2s linear;
+}
+
+header{
+    background-color: #0a123d;
+    color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.logo{
+    font-size: 29px;
+    align-self: flex-start;
+}
+
+.navbarPc{
+    display: flex;
+}
+
+.btn{
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: white;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-weight: bold;
+
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+ul li{
+    font-size: 20px;
+}
+
+.navbarMobile{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+@media screen and (max-width:500px) {
+    .navbarPc{
+        display: none;
+    }
+    .btn{
+        display: flex;
+    }   
+}
